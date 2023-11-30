@@ -12,4 +12,21 @@ class PlayerCharacterTest {
         //THEN
         assertEquals(positionX, actual);
     }
+
+    @Test
+    public void getYTest_whenCreated_then0(){
+
+        //GIVEN
+        int positionY = 0;
+
+        //WHEN
+        int actual = PlayerCharacter.getY();
+
+        //THEN
+        assertEquals(positionY, actual);
+
+    }
+
+
+
 }
