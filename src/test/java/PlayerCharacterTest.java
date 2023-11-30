@@ -6,25 +6,39 @@ class PlayerCharacterTest {
     @Test
     public void getXTEst_whenCreated_then0(){
         // GIVEN
-        int positionX = 0;
+        int expectedY = 0;
         //WHEN
         int actual = PlayerCharacter.getX();
         //THEN
-        assertEquals(positionX, actual);
+        assertEquals(expectedY, actual);
     }
 
     @Test
     public void getYTest_whenCreated_then0(){
 
         //GIVEN
-        int positionY = 0;
+        int expectedY = 0;
 
         //WHEN
         int actual = PlayerCharacter.getY();
 
         //THEN
-        assertEquals(positionY, actual);
+        assertEquals(expectedY, actual);
 
+    }
+
+    @Test
+    public void moveTest_whenW_thenGetYIs1(){
+        //GIVEN
+        int expectedY = 1;
+        String move = "W";
+
+        //WHEN
+        PlayerCharacter.move(move);
+        int actual = PlayerCharacter.getY();
+
+        //THEN
+        assertEquals(expectedY, actual);
     }
 
 

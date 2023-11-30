@@ -1,11 +1,19 @@
 public class PlayerCharacter {
-
+    static int x = 0;
+    static int y = 0;
     public static int getX(){
-        return 0;
+
+        return x;
     }
 
     public static int getY() {
 
-        return 0;
+        return y;
+    }
+
+    public static void move(String s){
+        if (s.equals("W")){
+            y++;
+        }
     }
 }
